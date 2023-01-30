@@ -5,8 +5,9 @@
 ## Table of contents
 
 Section 1: [Overview](https://github.com/ghassanarnouk/Hello-TCL#overview)\
-Section 2: [Environment Setup]()\
-Section 3:
+Section 2: [Environment Setup](https://github.com/ghassanarnouk/Hello-TCL#environment-setup)\
+Section 3: [Special Variables]()\
+Section 4: [Basic Syntax]()
 
 ## Overview
 
