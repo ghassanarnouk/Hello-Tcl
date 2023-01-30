@@ -51,3 +51,9 @@ The source files for Tcl programs are named with the extension "**.tcl**".
 It is just a small program that enables you to type Tcl commands and have them executed line-by-line.
 It **stops execution** of a tcl file, in case, it **encounters an error** unlike a compiler that executes fully.
 
+Now, we can build, execute, and run Tcl file, say helloWorld.tcl, as follows:
+
+```bash
+$ tclsh helloWorld.tcl
+```
+
