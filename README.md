@@ -58,3 +58,28 @@ Now, we can build, execute, and run Tcl file, say helloWorld.tcl, as follows:
 $ tclsh helloWorld.tcl
 ```
 
+## Special Variables
+
+| Variable        | Description                                                                                                                              |
+| ----------      | ------------                                                                                                                             |
+| argc            | Refers to a number of command line arguments.                                                                                            |
+| argv            | Refers to the list containing the command-line arguments.                                                                                |
+| argv0           | Refers to the file name of the file being interpreted ***OR***  the name by which we invoke the script.                                  |
+| env             | Used for representing the array of elements that are environmental variables.                                                            |
+| errorCode       | Provides the error code for last Tcl error.                                                                                              |
+| errorInfo       | Provides the stack trace (report that provides information about program subroutines) for last Tcl error.                                |
+| tcl_interactive | Used to switch between **interactive** and **non-interactive** modes by setting this to 1 and 0 respectively.                            |
+| tcl_library     | Used for setting the location of standard Tcl libraries.                                                                                 |
+| tcl_pkgPath     | Provides the list of directories where packages are generally installed.                                                                 |
+| tcl_patchLevel  | Refers to the current patch level of the Tcl interpreter.                                                                                |
+| tcl_platform    | Used for representing the array of elements with objects including byteOrder, machine, osVersion, platform, and os.                      |
+| tcl_precision   | Refers to the precision i.e. number of digits to retain when converting from floating-point numbers to strings. The default value is 12. |
+| tcl_prompt1 | Refers to the primary prompt |
+| tcl_prompt2 | Refers to the second prompt with invalid commands |
+| tcl_rcFileName | Provides the user specific startup file |
+| tcl_traceCompile | Used for controlling the tracing of bytecode **compilation**. Use 0 for no output, 1 for summary, and 2 for detailed. |
+| tcl_traceExec | Used for controlling the tracing of bytecode **execution**.  Use 0 for no output, 1 for summary, and 2 for detailed. |
+| tcl_version | Returns the current version of the Tcl interpreter |
+
+**Note:** the above special commands have their special meanings for the Tcl interpreter.
+
