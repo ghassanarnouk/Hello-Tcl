@@ -39,3 +39,15 @@ It includes:
 * Desktop GUI applications
 * Embedded applications
 
+## Environment Setup
+
+### Text Editor
+
+The files created using the text editor are called **source files** and contain program **source code**.
+The source files for Tcl programs are named with the extension "**.tcl**".
+
+## Tcl Interpreter
+
+It is just a small program that enables you to type Tcl commands and have them executed line-by-line.
+It **stops execution** of a tcl file, in case, it **encounters an error** unlike a compiler that executes fully.
+
