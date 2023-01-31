@@ -83,3 +83,90 @@ $ tclsh helloWorld.tcl
 
 **Note:** the above special commands have their special meanings for the Tcl interpreter.
 
+## Basic Syntax
+
+### Tcl Program
+
+We use a new line or semicolon to terminate the previous line of code (similar to bash).
+However, semicolon is not necessary, if you are using newline for each command.
+
+### Comments
+
+Comments are like helping text in your Tcl program and the interpreter ignores them.
+Comments can be written using a hash_(#) sign in the beginning.
+
+Multiline or block comment is written using "if" with condition "0".
+An example is given below:
+
+```tcl
+if 0 {
+    Everything in here is a comment
+    Multiline/block comment
+}
+puts "Hello World 2!"
+```
+
+Inline comment uses ";". An example is given below:
+
+```tcl
+puts "hello World 3!"; # my first print in Tcl program
+```
+
+### Identifiers 
+
+A Tcl identifier is a name used to to identify a variable, function, or any other user-defined item.
+
+An identifier starts with a latter A-Z or a-z or underscore (_) followed by zero or more letters, dollars ($), and digits (0-9).
+
+Tcl does not allow punctuation characters suh as @, and % with identifiers.
+Tcl is a **case sensitive_** language.
+The *Manpower* and *manpower* are two different identifiers in Tcl.
+Here are some of the examples of acceptable identifiers:
+
+```
+mohd     zara  abc move_name a_123
+myname50 _temp j   a23b9     retVal
+```
+
+### Whitespace in Tcl
+
+A line containing only whitespace, possibly with a comment, is known as a **blank line**, and a Tcl interpreter totally ignores it.
+
+Whitespace is the term used in Tcl to describe blanks, tabs, newline characters, and comments.
+Whitespace separates one part of a statement from another and enables the interpreter to identify where one element in a statement, such as puts, ends and the next element begins.
+Therefore, in the following statement:
+
+```tcl
+#!/usr/bin/tclsh
+
+puts "Hello world!"
+```
+
+There must be at least one whitespace character (usually a space) between "puts" and "Hello World!" for the interpreter to be able to distinguish them.
+On the other hand, in the following statement:
+
+```tcl
+#!/usr/bin/tclsh
+
+puts [expr 3+2] ;# print sum of 3 and 2
+```
+
+No white space characters are necessary between 3 and +, or between + and 2, although, you are free to include some if you wish for the readability purpose.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
