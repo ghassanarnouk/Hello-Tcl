@@ -11,7 +11,7 @@ Section 4: [Basic Syntax](https://github.com/ghassanarnouk/Hello-Tcl#basic-synta
 Section 5: [Commands]()
 
 
-## Overview
+## Section 1: Overview
 
 Tcl is shortened from **Tool Command Language**.
 It is a combination of a scripting language and its own interpreter that gets embedded to the application.
@@ -42,7 +42,7 @@ It includes:
 * Desktop GUI applications
 * Embedded applications
 
-## Environment Setup
+## Section 2: Environment Setup
 
 ### Text Editor
 
@@ -60,7 +60,7 @@ Now, we can build, execute, and run Tcl file, say helloWorld.tcl, as follows:
 $ tclsh helloWorld.tcl
 ```
 
-## Special Variables
+## Section 3: Special Variables
 
 | Variable         | Description                                                                                                                              |
 | ----------       | ------------                                                                                                                             |
@@ -85,7 +85,7 @@ $ tclsh helloWorld.tcl
 
 **Note:** the above special commands have their special meanings for the Tcl interpreter.
 
-## Basic Syntax
+## Section 4: Basic Syntax
 
 ### Tcl Program
 
@@ -155,14 +155,94 @@ puts [expr 3+2] ;# print sum of 3 and 2
 
 No white space characters are necessary between 3 and +, or between + and 2, although, you are free to include some if you wish for the readability purpose.
 
+## Section 5: Commands
 
+Tcl is a Tool command language, commands are the most vital part of the language.
+Tcl commands are built in-to the language with each having its own predefined function.
+These commands form the reserved words of the language and cannot be used for other variable naming.
+The advantage with these Tcl commands is that you can define your own implementation for any of these commands to replace the original built-in functionality.
 
+Each of the Tcl commands validates the input and it reduces the work of the interpreter.
 
+Tcl command is actually a list of words, with the first word representing the command to be executed.
 
+The next words represent the arguments.
+In order to group the words into a single argument, we enclose multiple words with "" or {}.
 
+```tcl
+commandName argument1 argument2 ... argumentN
+```
 
+In the following example:
 
+```tcl
+!#/usr/bin/tclsh
 
+puts "Hello, world!"
+```
+
+In the above code, 'puts' is the Tcl command and "Hello World!" is argument1.
+As mentioned earlier, we used "" to group two words.
+
+Let's see another example of Tcl command with two arguments:
+
+```tcl
+#!/usr/bin/tclsh
+
+puts stdout "Hello, world!"
+```
+
+In the above example, 'puts' is the Tcl command, 'stdout' is argument1, and "Hello World" is argument2.
+Here, **stdout** makes the program prints in the standard output device.
+
+### Command Substitution
+
+In command substitutions, square brackets are used to evaluate the scripts inside the square brackets.
+
+A simple example is shown below:
+
+```tcl
+#!/usr/bin/tclsh
+
+puts [expr 1 + 6 + 9]
+```
+
+When the above code is executed, it produces the following result:
+
+```tcl
+16
+```
+
+### Variable Substitution
+
+In variable substitutions, $ is used before the variable name and this returns the contents of the variable.
+
+A simple example to set a value to a variable and print it is shown below:
+
+```tcl
+#!/usr/bin/tclsh
+
+set a 3
+puts $a
+```
+
+When the code above is executed, it produces the following result:
+
+```tcl
+3
+```
+
+### Backslash Substitution
+
+These are commonly called **escape sequences**; with each backslash, followed by a letter having its own meaning.
+
+A simple example for newline substitution  is shown below:
+
+```tcl
+#!/usr/bin/tclsh
+
+puts "Hello\nWorld"
+```
 
 
 
