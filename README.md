@@ -7,7 +7,9 @@
 Section 1: [Overview](https://github.com/ghassanarnouk/Hello-TCL#overview)\
 Section 2: [Environment Setup](https://github.com/ghassanarnouk/Hello-TCL#environment-setup)\
 Section 3: [Special Variables](https://github.com/ghassanarnouk/Hello-Tcl#special-variables)\
-Section 4: [Basic Syntax]()
+Section 4: [Basic Syntax](https://github.com/ghassanarnouk/Hello-Tcl#basic-syntax)\
+Section 5: [Commands]()
+
 
 ## Overview
 
