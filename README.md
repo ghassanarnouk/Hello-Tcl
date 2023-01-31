@@ -4,11 +4,11 @@
 
 ## Table of contents
 
-Section 1: [Overview](https://github.com/ghassanarnouk/Hello-TCL#overview)\
-Section 2: [Environment Setup](https://github.com/ghassanarnouk/Hello-TCL#environment-setup)\
-Section 3: [Special Variables](https://github.com/ghassanarnouk/Hello-Tcl#special-variables)\
-Section 4: [Basic Syntax](https://github.com/ghassanarnouk/Hello-Tcl#basic-syntax)\
-Section 5: [Commands](https://github.com/ghassanarnouk/Hello-Tcl#section-5-commands)
+Section 1: [Overview](https://github.com/ghassanarnouk/Hello-TCL#section-1-overview)\
+Section 2: [Environment Setup](https://github.com/ghassanarnouk/Hello-TCL#section-2-environment-setup)\
+Section 3: [Special Variables](https://github.com/ghassanarnouk/Hello-TCL#section-3-special-variables)\
+Section 4: [Basic Syntax](https://github.com/ghassanarnouk/Hello-TCL#section-4-basic-syntax)\
+Section 5: [Commands](https://github.com/ghassanarnouk/Hello-Tcl#section-5-commands)\
 Section 6: [Data Types]()
 
 
