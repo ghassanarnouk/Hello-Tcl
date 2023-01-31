@@ -245,6 +245,119 @@ A simple example for newline substitution  is shown below:
 puts "Hello\nWorld"
 ```
 
+## Section 6: Data Types
+
+The primitive data-type of Tcl is *string* and often we can find quotes on Tcl as string only language.
+These primitive data-types in turn create composite(make up) data-types for list and associative array.
+In Tcl, data-types can represent not only the simple Tcl objects, but also can represent complex objects such as handles, graphic objects (mostly widgets), and I/O channels.
+
+### Simple Tcl Objects
+
+In Tcl, whether it is an integer number, boolean, floating point number, or a string.
+When you want to use a variable, you can directly assign a value to it.
+There is no **step of declaration** in Tcl.
+There can be internal representations for these different types of objects.
+It can **transform one data-type to another when required**.
+
+An example is shown below:
+
+```tcl
+#!/usr/bin/tclsh
+
+set myVar 18
+puts $myVar
+
+set myVar 20
+puts [expr $myVar + 6+9]
+```
+
+When the code above is executed, it produces the following output:
+
+```tcl
+18
+35
+```
+
+One important thing to note is that, these variables **don't have default values** and must be assigned value before they are used.
+
+### String Representations
+
+Unlike other languages, in Tcl, you need to **not include double quotes**.
+
+An example is shown below:
+
+```tcl
+#!/usr/bin/tclsh
+
+set myVar hello
+puts $myVar
+```
+
+When we want to represent multiple strings, we can use either **double quotes** or **curly braces**.
+
+```tcl
+#!/usr/bin/tclsh
+
+set my Var "hello world"
+puts $myVar
+
+set myVar {Hello World}
+puts $myVar
+```
+
+### List
+
+List is nothing but a group of elements.
+A group of words wither using double quotes or curly braces can be used to represent a simple list.
+
+A simple *list* is shown below:
+
+```tcl
+#!/usr/bin/tclsh
+
+set myVar {red green blue}
+puts [lindex $myVar 2]
+
+set myvar "red green blue"
+puts [lindex $myVar 1]
+```
+
+### Associative Array
+
+Associative arrays have an **index** (key) that is **not necessarily an integer**.
+
+A simple example is shown below:
+
+```tcl
+#!/usr/bin/tclsh
+
+set marks(englsih) 80
+puts $marks(english)
+
+set marks(mathematics) 90
+puts $marks(mathematics)
+```
+
+When the above code is executed, it produces the following result:
+
+```tcl
+80
+90
+```
+
+### Handles
+
+Tcl handles are commonly used to represent files and graphics objects.
+These can include handles to network requests and also other channels like serial port communications, sockets, or I/O devices.
+
+```tcl
+#!/usr/bin/tclsh
+
+set myfile [open "test.tcl" r]
+```
+
+
+
 
 
 
