@@ -10,7 +10,7 @@ Section 3: [Special Variables](https://github.com/ghassanarnouk/Hello-TCL#sectio
 Section 4: [Basic Syntax](https://github.com/ghassanarnouk/Hello-TCL#section-4-basic-syntax)\
 Section 5: [Commands](https://github.com/ghassanarnouk/Hello-Tcl#section-5-commands)\
 Section 6: [Data Types](https://github.com/ghassanarnouk/Hello-Tcl#section-6-data-types)\
-Section 7: [Variables]()
+Section 7: [Variables](https://github.com/ghassanarnouk/Hello-Tcl#variables)
 Section 8: [Operators]()
 
 
