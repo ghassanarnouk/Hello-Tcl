@@ -11,6 +11,7 @@ Section 4: [Basic Syntax](https://github.com/ghassanarnouk/Hello-TCL#section-4-b
 Section 5: [Commands](https://github.com/ghassanarnouk/Hello-Tcl#section-5-commands)\
 Section 6: [Data Types](https://github.com/ghassanarnouk/Hello-Tcl#section-6-data-types)\
 Section 7: [Variables]()
+Section 8: [Operators]()
 
 
 ## Section 1: Overview
@@ -357,13 +358,106 @@ These can include handles to network requests and also other channels like seria
 set myfile [open "test.tcl" r]
 ```
 
+## Variables
 
+In Tcl, there is no concept of variable declaration.
+Once, a new variable name is encountered, Tcl will define a new variable.
 
+### Variable Naming
 
+The name of variables can contain any characters and length.
+You **can** even **have white spaces by enclosing the variable in curly braces**, but it is not preferred.
 
+The **set** command is used for assigning value to a variable.
+The syntax for set command is:
 
+```tcl
+#!/usr/bin/tclsh
 
+set variableA 10
+set {variable B} test
 
+puts $variableA
+puts ${variable B}
+```
 
+When the above code is executed, it produces the following result:
 
+```tcl
+10
+test
+```
 
+Note that $variableName is used to get the value of the variable.
+
+### Dynamic Typing
+
+Tcl is a dynamically typed language.
+The value of the variable can be dynamically converted to the required type when required.
+For instance, a number 5 that is stored as string will be converted to number when doing an arithmetic operation.
+
+It is shown below
+
+```tcl
+#!/usr/bin/tclsh
+
+set variableA "10"
+puts $variableA
+
+set sum [expr $variableA +20]
+puts $sum
+```
+
+When the above code is executed, it produces the following result:
+
+```tcl
+10
+30
+```
+
+### Mathematical Expressions
+
+As seen earlier, **expr** is used for *representing mathematical expression*.
+The default precision of Tcl is 12 digits.
+In order to get floating point results, we should *add at least a single decimal digits*.
+
+A simple example explains the above:
+
+```tcl
+#!/usr/bin/tclsh
+
+set variableA "10"
+set result [expr $variableA / 9];
+puts $result
+
+```
+
+In the above example, there are 3 cases:
+* In the first case, the dividend and the divisor are whole numbers and we get a whole number as result.
+* In the second case,the divisor alone is a decimal number
+* In the third case, the dividend is a decimal number.
+
+In both second and third cases, we get a decimal number as result.
+
+**Note:** the precision can be changed using *tcl_precision* special variable.
+
+```tcl
+#!/usr/bin/tclsh
+
+set tcl_precision 4
+
+set variable "30.92"
+set result [expr $variableA / 3]
+puts $result
+```
+
+**Note:** tcl_precision needs to be set before the *puts* statement is executed for tcl_precision to affect the result.
+
+**Note:** the precision number specified include the total digits before and my after the decimal. 
+Examples of *tcl_precision 4* include:
+
+```tcl
+30.92
+1.133
+100.7
+```
