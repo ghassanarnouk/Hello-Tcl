@@ -10,7 +10,7 @@ Section 3: [Special Variables](https://github.com/ghassanarnouk/Hello-TCL#sectio
 Section 4: [Basic Syntax](https://github.com/ghassanarnouk/Hello-TCL#section-4-basic-syntax)\
 Section 5: [Commands](https://github.com/ghassanarnouk/Hello-Tcl#section-5-commands)\
 Section 6: [Data Types](https://github.com/ghassanarnouk/Hello-Tcl#section-6-data-types)\
-Section 7: [Variables](https://github.com/ghassanarnouk/Hello-Tcl#variables)
+Section 7: [Variables](https://github.com/ghassanarnouk/Hello-Tcl#variables)\
 Section 8: [Operators]()
 
 
@@ -101,6 +101,7 @@ Comments are like helping text in your Tcl program and the interpreter ignores t
 Comments can be written using a hash_(#) sign in the beginning.
 
 Multiline or block comment is written using "if" with condition "0".
+Note that the syntax has to match the example.
 An example is given below:
 
 ```tcl
@@ -461,3 +462,41 @@ Examples of *tcl_precision 4* include:
 1.133
 100.7
 ```
+
+## Operators
+
+An operator is a symbol that tells the compiler to perform specific mathematical or logical manipulations.
+Tcl language is rich in built-in operators and provides the following types of operators
+
+- Arithmetic operators
+- Relations operators
+- Logical operators
+- Bitwise operators
+- Ternary operators
+
+### Arithmetic Operators
+
+Following table shows all arithmetic operators support by Tcl language.
+Assume variable **A** holds **10**, and variable **B** holds **20**.
+
+| Operator | Description                                                 | Example           |
+| -------- | ------------                                                | --------          |
+| +        | Adds two operands                                           | A+B will give 30  |
+| -        | Subtracts second operand from the first                     | A-B will give -10 |
+| *        | Multiples both operands                                     | A*B will give 200 |
+| /        | Divides numerator by de-numerator                           | B/A will give 2   |
+| %        | Modulus operator and remainder of after an integer division | B%A will give 0   |
+
+### Relational Operators
+
+Following table shows all the relational operators support by Tcl language.
+Assume variable **A** holds **10**, and variable **B** holds **20**.
+
+| Operator | Description                                                                                                                        | Example              |
+| -------- | ------------                                                                                                                       | --------             |
+| ==       | Checks if the values of two operands are **equal** or not, if yes then condition becomes true                                      | (A == B) is not true |
+| !=       | Checks if the values of two operands are equal or not, if values are **not equal** then condition becomes true                     | (A != B) is true     |
+| >        | Checks if the value of left operand is **greater than** the value of right operand, if yes then condition becomes true             | (A >= B) is not true |
+| <        | Checks if the value of left operand is **less than** the value of right operand, if yes then condition becomes true                | (A < B) is true      |
+| >=       | Checks if the value of left operand is **greater than or equal** to the value of right operand, if yes then condition becomes true | (A >= B) is not true |
+| <=       | Checks if the value of left operand is **less than or equal** to the value of right operand, if yes then condition becomes true    | (A <= B) is true     |
