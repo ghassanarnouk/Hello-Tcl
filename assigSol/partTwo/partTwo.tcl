@@ -105,7 +105,6 @@ proc contains_1_and_5 {numbers} {
     return $list_has_1_and_5
 }
 
-
 # Print an output summary of the results
 puts "Summary Results:"
 puts "----------------"
