@@ -14,11 +14,11 @@
 # Explanation: Temperature at 36.50 Celsius converted in Kelvin is 309.65 and converted in Fahrenheit is 97.70.
 
 proc convert_temp {celsius} {
-  set temperature(0) [expr $celsius + 273.15]         ;# in kelvin
-  set temperature(1) [expr $celsius * 1.80 + 32.00]   ;# in fahrenheit
+  set kelvin [expr $celsius + 273.15]         ;# in kelvin
+  set fahrenheit [expr $celsius * 1.80 + 32.00]   ;# in fahrenheit
 
-  puts "\[[format %.2f $temperature(0)], [format %.2f $temperature(1)]]"
-  puts "Temperature at [format %.2f $celsius] Celsius converted in Kelvin is [format %.2f $temperature(0)] and converted in Fahrenheit is [format %.2f $temperature(1)]."
+  puts "\[[format %.2f $kelvin], [format %.2f $fahrenheit]]"
+  puts "Temperature at [format %.2f $celsius] Celsius converted in Kelvin is [format %.2f $kelvin] and converted in Fahrenheit is [format %.2f $fahrenheit]."
 }
 
 convert_temp 36.50
